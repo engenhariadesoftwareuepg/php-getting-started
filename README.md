@@ -1,28 +1,15 @@
-# php-getting-started
+# Iniciando com DevOps PHP
 
-A barebones PHP app that makes use of the [Silex](http://silex.sensiolabs.org/) web framework, which can easily be deployed to Heroku.
-
-This application supports the [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) article - check it out.
+Este é um exemplo simples baseado no template heroku para aplicações php
 
 ## Deploying
-
-Install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
-
-```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-or
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Documentation
-
-For more information about using PHP on Heroku, see these Dev Center articles:
-
-- [Getting Started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
-- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
+Para realizar ao deploy seguir os seguintes passos:
+ - Realizar o clone do repositório
+ - Configurar o travis-ci para habilitar o deploy do repositório clonado
+ - Botão settings
+ - Em Environment Variables adicionar
+    - HEROKU_API_KEY
+    - O valor copiar a sua chave da sua conta no heroku
+ - Editar o arquivo .travis.yml do seu repositorio
+ - alterar o nome do app no deploy do heroku
+    - app: [nome_da_sua_aplicacao]
