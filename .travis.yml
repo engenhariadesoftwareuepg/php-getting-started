@@ -1,7 +1,9 @@
 language: php
 php:
   - 7.1.9
-
+script:
+  - cd tests
+  
 deploy:
   provider: heroku
   api-key: 
