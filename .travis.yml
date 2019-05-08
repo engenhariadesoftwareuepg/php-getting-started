@@ -8,4 +8,5 @@ deploy:
   provider: heroku
   api-key: 
     secure: $HEROKU_API_KEY
+  buildpacks:set heroku/php
   app: devopsphp
