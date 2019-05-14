@@ -5,11 +5,14 @@ script:
   - cd tests
 
 before_deploy:
-- echo '{}' > composer.json
+- echo '{"require" : {
+    "silex/silex": "^2.0.4",
+    "monolog/monolog": "^1.22",
+    "twig/twig": "^2.0",
+    "symfony/twig-bridge": "^3"
+  }}' > composer.json
 deploy:
   provider: heroku
   api-key: 
     secure: $HEROKU_API_KEY
-  buildpacks: heroku/php
-  skip_cleanup: true
   app: phpget
