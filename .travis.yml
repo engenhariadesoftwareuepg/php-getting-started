@@ -5,11 +5,11 @@ script:
   - cd tests
 
 before_deploy:
-- echo '{"require" : {
-    "silex/silex": "^2.0.4",
-    "monolog/monolog": "^1.22",
-    "twig/twig": "^2.0",
-    "symfony/twig-bridge": "^3"
+- echo '{\"require\" : {
+    \"silex/silex\": \"^2.0.4\",
+    \"monolog/monolog\": \"^1.22\",
+    \"twig/twig\": \"^2.0\",
+    \"symfony/twig-bridge\": \"^3\"
   }}' > composer.json
 deploy:
   provider: heroku
