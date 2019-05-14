@@ -9,4 +9,5 @@ deploy:
   api-key: 
     secure: $HEROKU_API_KEY
   buildpacks: heroku/php
+  skip_cleanup: true
   app: phpget
