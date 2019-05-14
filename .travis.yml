@@ -9,4 +9,4 @@ deploy:
   api-key: 
     secure: $HEROKU_API_KEY
   buildpacks: heroku/php
-  app: devopsphp
+  app: phpget
