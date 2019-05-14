@@ -10,4 +10,5 @@ deploy:
   provider: heroku
   api-key: 
     secure: $HEROKU_API_KEY
+  skip_cleanup: true
   app: phpget
